@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+</head>
+	<script type="text/javascript">
+		class eleve {
+			constructor(){
+				this.nom = prompt("Entrer le nom :");
+				this.math = Number(prompt("note math :"));
+				this.science = Number(prompt("note science :"));
+				this.elec = Number(prompt("note elec :"));
+				this.moyenne = (this.math + this.science + this.elec) / 3;
+			}
+		}
+		const eleve1 = new eleve;
+		const eleve2 = new eleve;
+		const eleve3 = new eleve;
+
+
+		 	var lesEleves = [eleve1, eleve2, eleve3];
+		 		for (var i = 0; i < lesEleves.length - 1; i++) {
+		 				for (var j = i + 1; j < lesEleves.length; j++) {
+		 					if (lesEleves[i].moyenne < lesEleves[j].moyenne) {
+		 						var temp = lesEleves[i].moyenne;
+		 						lesEleves[i].moyenne = lesEleves[j].moyenne;
+		 						lesEleves[j].moyenne = temp;
+
+		 					}
+		 				}
+		 		}
+		 	for (var k = 0; k < lesEleves.length; k++) {
+		 		if (k == 0){
+		 			document.write(`${lesEleves[k].nom} est la ${k+1}er de moyenne ${lesEleves[k].moyenne}<br>`);
+		 		}
+		 		else {
+		 			document.write(`${lesEleves[k].nom} est la ${k+1}eme de moyenne ${lesEleves[k].moyenne}<br>`);
+		 		}
+		 	}
+	</script>
+<body>
+
+</body>
+</html>

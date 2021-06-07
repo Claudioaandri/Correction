@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>application</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+				var x = prompt("Entrer un caractere :");
+				var voyelle = ['a','e','y','u','i','o'];
+				var i ;
+				var occ = 0;
+
+			for (i = 0; i <= 5 ; i++) {
+				if (x == voyelle[i]){
+					occ++;				
+				}
+				
+			}
+				if ( occ == 0){
+					document.write("Consonne!");
+				}
+				else {
+					document.write("voyelle!");
+				}
+		</script>
+
+
+	</body>
+</html>

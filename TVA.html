@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>index</title>
+</head>
+<body>
+   
+   	<script type="text/javascript">
+		 var tva = '0,2';
+		 tva = parseInt(tva);
+		 var HT = prompt("Entrer le montant hors taxe");
+			HT = parseInt(HT);
+
+			var ttc = HT+(HT*tva);
+			alert ("HT "+ttc);
+			ttc = parseInt(ttc);
+
+
+			document.write(`Le montant en TTC est ${ttc} ariary `);
+
+
+
+  
+	</script>
+</body>
+</html>

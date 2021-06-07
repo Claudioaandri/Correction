@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>motDePasse</title>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+		function calcul(){
+			
+			var moyenne = (a + b + c) / 3;
+			document.write(fname + ", votre moyenne est " + moyenne);
+		}
+		calcul();
+	</script>
+</head>
+<body>
+	<h1>Bulletin de Notes  des Eleves</h1>
+	<form action="" method="POST">
+		<label for="nom">Name </label>
+		<input type="text" id="nom"><br>
+
+		<label for="math">mathematique </label>
+		<input type="number" id="math"><br>
+
+		<label for="electro">electronique </label>
+		<input type="number" id="electro"><br>
+
+		<label for="algo">algorithms </label>
+		<input type="number" id="algo"><br>
+
+		<input type="submit" onclick="calcul()" value="Executer"><br> 
+	</form>
+	<script>
+		//OBJET SUR LE JAVA SCRIPT
+		// var moi = {
+		// 	name : "Claudio",
+		// 	firstName : "kim-Jucca",
+		// 	age : 19,
+
+		// 	identity : function() {
+		// 		return 'Nom : ' + this.name +
+		// 				'\nPrenom : ' + this.firstName +
+		// 				'\nAge : ' + this.age;
+		// 		}
+		// 	}
+		// 	alert(moi.identity()); 	
+		// var primitive = "Je suis un primitive";
+
+
+		// var longuerPrim = primitive.length;
+		// var maj_prim = primitive.toUpperCase();
+
+		// var chaine = new String("je suis une objet");
+		// var Upp_chaine = chaine.toUppercase();
+		
+		// alert("Longuer primitive : " + longuerPrim +
+		// 	  "\nPrimitive en majuscules " + maj_prim +
+		// 	  "\nChaine en majuscules : " + chaine +
+		// 	  "\nobjet : " + Upp_chaine);
+
+			var fname = document.getElementById(nom);
+			var a = document.getElementById(math);
+			var b = document.getElementById(electro);
+			var c = document.getElementById(algo);
+
+	</script>
+</body>
+</html>

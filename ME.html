@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<script type="text/javascript">
+	function moy(note1, note2, note3){
+		var stock
+		return stock = (parseInt(note1) + parseInt(note2) + parseInt(note3))/3;
+	}
+		var et1 = {
+			note1 : 0,
+			note2 : 0,
+			note3 : 0,
+		affichage_note :function () {
+			document.write("<br>Entrer la note1 :" + this.note1);
+			document.write("<br>Entrer la note2 :" + this.note2);
+			document.write("<br>Entrer la note3 :" + this.note3);
+									}
+					}
+		var et2 = {
+			note1 : 0,
+			note2 : 0,
+			note3 : 0,
+		affichage_note :function () {
+			document.write("Entrer la note1 :" + this.note1);
+			document.write("<br>Entrer la note2 :" + this.note2);
+			document.write("<br>Entrer la note3 :" + this.note3);
+									}
+					}
+</script>
+<body>
+	<script type="text/javascript">
+		//saisie
+	et1.note1 = prompt("Donner la 1er note de 1er etudiant");
+	et1.note2 = prompt("Donner la 2nd note de 1er etudiant");
+	et1.note3 = prompt("Donner la 3eme note de 1er etudiant");
+		//affichage
+	et1.affichage_note();
+		//moyenne
+	document.write("<br>La moyenne est :" + moy(et1.note1, et1.note2, et1.note3));
+	//------------------------------------------
+		//saisie
+	et2.note1 = prompt("Donner la 1er note de 2em etudiant");
+	et2.note2 = prompt("Donner la 2nd note de 2em  etudiant");
+	et2.note3 = prompt("Donner la 3eme note de 2em etudiant");
+	   //affichage
+	et2.affichage_note();
+	   //moyenne
+	document.write("<br>La moyenne est :" + moy(et2.note1, et2.note2, et2.note3));
+   //--------------------------------------------
+   		//saisie
+   	et3.note1 = prompt("Donner la 1er note de 3eme etudiant");
+	et3.note2 = prompt("Donner la 2nd note de 3eme etudiant");
+	et3.note3 = prompt("Donner la 3eme note de 3eme etudiant");
+		//affichage
+	et3.affichage_note();
+		//moyenne
+	document.write("<br>La moyenne est :" + moy(et3.note1, et3.note2, et3.note3))
+
+	</script>
+
+
+</body>
+</html>
